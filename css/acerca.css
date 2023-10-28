@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#sec3{
+    background-color: #030d39;
+    color: white;
+}
+
+#sec4{
+    background-color: #030d39;
+    color: white;
+}
+
+#sec5{
+    background-color: #030d39;
+    color: white;
+    height: 70vh;
+}
+
+html{
+    scroll-snap-type: mandatory;
+    /*scroll-padding-top: 30px;*/
+}
+
+section{
+    height: 120vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+nav{
+    /*display: none;*/
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al extremo derecho del encabezado */
+}
+
+.servicios-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .servicios-dropdown {
+    display: block;
+}
+
+
+nav.transparente {
+    background-color: transparent;
+}
+
+nav.scroll {
+    background-color: #333; /* Cambia el color de fondo del encabezado al hacer scroll */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 10px;
+    position: relative; /* Establece la posición relativa para los elementos con sublistas */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.logo{
+    padding-right: 5px;
+}
+
+#textologo{
+    padding-right: 50%;
+    color: white;
+}
+
+h1{
+    font-family: 'Sometype Mono', monospace;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Sometype Mono', monospace;
+}
+
+h4 {  
+    font-family: 'Sometype Mono', monospace;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Sometype Mono', monospace;
+}
+
+a{
+    font-family: 'Sometype Mono', monospace;
+}
+
+.contenedores{
+    position: relative;
+    display: flex;
+}
+
+#contenedor1{
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: inline;
+}
+
+#contenedor1_arriba{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#contenedor1_arriba1{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor1_arriba2{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor1_arriba2 h1{
+    margin-left: 15vh;
+    margin-right: 15vh;
+    text-align: center;
+}
+
+#contenedor1_abajo{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contenedor1_abajo1{
+    height: 25vh;
+    width: 50%;
+    text-align: center;
+}
+
+#contenedor1_abajo2{
+    height: 25vh;
+    width: 50%;
+    text-align: center;
+}
+
+#contenedor1_abajo3{
+    height: 25vh;
+    width: 50%;
+    text-align: center;
+}
+
+#contenedor1_abajo4{
+    /*box-shadow: inset 0 0 1px 1px #333;*/
+    height: 25vh;
+    width: 50%;
+    text-align: center;
+}
+
+#contenedor1_abajo1 p{    
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#contenedor1_abajo2 p{    
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#contenedor1_abajo3 p{    
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#contenedor1_abajo4 p{    
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#contenedor2{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    margin-top: 15px;
+    height: 50px;
+}
+
+#poster2{
+    height: 500px;
+    width: 600px;
+    transition: box-shadow .1s, transform .1s;
+    background: url("../img/poster2.png") no-repeat center;
+    background-size: cover;
+}
+
+
+.container_estadistica{
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+footer{
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
