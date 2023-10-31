@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+    .cube{
+        display: none;
+    }
+}
+
 .cube{
     position: relative;
     width: 300px;

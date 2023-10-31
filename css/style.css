@@ -29,6 +29,21 @@
     height: 70vh;
 }
 
+/* Pantallas pequeñas */
+@media (max-width: 1000px) {
+    #container{
+        display: none;
+    }
+}
+
+/* Pantallas medianas y grandes */
+@media (min-width: 1001px) {
+    #responsivo{
+        display: none;
+    }
+}
+
+
 html{
     scroll-snap-type: mandatory;
     /*scroll-padding-top: 30px;*/
@@ -38,6 +53,10 @@ section{
     height: 120vh;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+}
+
+.grande{
+    font-size: 40px;
 }
 
 nav{
@@ -113,13 +132,20 @@ nav a {
     align-items: center;
 }
 
-#poster{
-    height: 500px;
-    width: 600px;
-    transition: box-shadow .1s, transform .1s;
-    background: url("../img/ima.png") no-repeat center;
-    background-size: cover;
+img {
+  max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto; /* La altura se ajusta automáticamente para mantener la proporción original */
+  /* display: block; Evita espacios no deseados debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente en su contenedor si es necesario */
 }
+
+.movible{
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+  height: auto; /* La altura se ajusta automáticamente para mantener la proporción original */
+  /* display: block; Evita espacios no deseados debajo de la imagen */
+  margin: 0 auto;
+}
+
 
 #frase{
     margin-left: 100px;
@@ -149,27 +175,11 @@ nav a {
     background-color: #fff;
     width: calc(30% - 20px);
     padding: 20px;
-    margin: 10px 0;
+    margin: 20px 0;
     border-radius: 8px;  
     color: #030924;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
     text-align: center;
-}
-
-.service:hover{
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-}
-
-.servicios-dropdown {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .servicios-dropdown {
-    display: block;
 }
 
 h1{
@@ -318,6 +328,14 @@ a{
 .icono{
     margin-top: 15px;
     height: 50px;
+}
+
+#poster{
+    height: 500px;
+    width: 600px;
+    transition: box-shadow .1s, transform .1s;
+    background: url("../img/ima.png") no-repeat center;
+    background-size: cover;
 }
 
 #poster2{

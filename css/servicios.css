@@ -1,10 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Sometype Mono', monospace;
 }
 
 #pregunta{
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .texto{
@@ -14,18 +16,56 @@
     text-align: justify;
 }
 
+li{
+    font-size: 20px;
+}
+
 #textopregunta{
-    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
-section{
-    background-color: #030d39;
-    color: white;
+#sec1{
+    /* background: linear-gradient(to bottom, #0000FF, #800080); */
+    background-color: #000b38;
 }
 
-.derecha{
-    float: right;
-    /* padding-right: 30vh; */
+#sec2{
+    background-color: #00005d;
+    /* background: linear-gradient(to bottom, #800080, #000784); */
+}
+
+#sec3{
+    background-color: #001a80;
+    /* background: linear-gradient(to bottom, #800080, #000784); */
+}
+
+#sec4{
+    background-color: #110080;
+    /* background: linear-gradient(to bottom, #800080, #000784); */
+}
+
+#sec5{
+    background-color: #10186f;
+    /* background: linear-gradient(to bottom, #800080, #000784); */
+}
+
+#particles-js{
+    height: 500vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.espacio60{
+    padding-top: 60px;
+}
+
+.espacio5{
+    padding-bottom: 5px;
+}
+
+.ultimop{
+    padding-bottom: 10vh;
 }
 
 html{
@@ -34,7 +74,9 @@ html{
 }
 
 section{
-    height: 120vh;
+    height: fit-content;
+    color: white;
+    text-align: center;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
 }
@@ -87,26 +129,12 @@ nav a {
     color: white;
 }
 
-h1{
-    font-family: 'Sometype Mono', monospace;
-}
-
 h2 {
     font-size: 24px;
-    font-family: 'Sometype Mono', monospace;
-}
-
-h4 {  
-    font-family: 'Sometype Mono', monospace;
 }
 
 p {
     font-size: 16px;
-    font-family: 'Sometype Mono', monospace;
-}
-
-a{
-    font-family: 'Sometype Mono', monospace;
 }
 
 .contenedores{
